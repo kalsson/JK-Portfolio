@@ -1,0 +1,61 @@
+// Imports
+@use '../custom' as *;
+
+#header-area {
+
+    #navbarSupportedContent {
+        justify-content: flex-end;
+    }
+
+    .header-logo {
+        width: 220px;
+        height: auto;
+    }
+
+    @include media-breakpoint-down(lg){
+        .navbar-collapse {
+            background-color: #000000f8;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    .navbar-nav {        
+        .nav-item {
+            
+            @include media-breakpoint-up(lg) {
+                &:hover {
+                    border-bottom: 2px solid #777777;
+                }
+            }
+
+            .nav-link {
+                color: #777777;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &:active {
+                    color: #fff;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                .nav-link {
+                    margin: 0 2rem;
+                    color: #000;
+    
+                    &:hover {
+                        color: #777777;
+                    }
+    
+                    &:active {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+}
