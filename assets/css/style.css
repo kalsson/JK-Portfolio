@@ -12037,10 +12037,10 @@ body {
   }
 }
 #header-area .navbar-nav .nav-item .nav-link {
-  color: #777777;
+  color: #fff;
 }
 #header-area .navbar-nav .nav-item .nav-link:hover {
-  color: #fff;
+  color: #777777;
 }
 #header-area .navbar-nav .nav-item .nav-link:active {
   color: #fff;

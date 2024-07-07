@@ -20,7 +20,8 @@
         }
     }
 
-    .navbar-nav {        
+    .navbar-nav {
+
         .nav-item {
             
             @include media-breakpoint-up(lg) {
@@ -30,10 +31,10 @@
             }
 
             .nav-link {
-                color: #777777;
+                color: #fff;
 
                 &:hover {
-                    color: #fff;
+                    color: #777777;
                 }
 
                 &:active {
@@ -42,6 +43,7 @@
             }
 
             @include media-breakpoint-up(lg) {
+
                 .nav-link {
                     margin: 0 2rem;
                     color: #000;
@@ -55,7 +57,7 @@
                     }
                 }
             }
+
         }
     }
-
 }
