@@ -23,7 +23,7 @@
     .navbar-nav {
 
         .nav-item {
-            
+
             @include media-breakpoint-up(lg) {
                 &:hover {
                     border-bottom: 2px solid #777777;
@@ -47,11 +47,11 @@
                 .nav-link {
                     margin: 0 2rem;
                     color: #000;
-    
+
                     &:hover {
                         color: #777777;
                     }
-    
+
                     &:active {
                         color: #000;
                     }
