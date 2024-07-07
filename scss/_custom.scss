@@ -1,0 +1,44 @@
+// MY THEME FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+$headings-font-family: 'Montserrat', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+// GRAYS AND WHITES
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// MY COLOR THEME
+$primary:       #183D6E;
+$secondary:     #eaf0f6;
+$success:       #2F8100;
+$warning:       #FAAE00;
+$danger:        #D10505;
+$dark:          #171C26;
+
+
+// RADIUS AND SHADOWS
+$border-radius: 0;
+$box-shadow: 0;
+
+// FONT SIZE
+$font-size-base: 1.6rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+
+// IMPORT BOOTSTRAP 5
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
