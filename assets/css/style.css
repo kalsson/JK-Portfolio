@@ -12017,43 +12017,43 @@ body {
   background-color: #f6f6f6;
 }
 
-#header-area #navbarSupportedContent {
+#top-area #navbarSupportedContent {
   justify-content: flex-end;
 }
-#header-area .header-logo {
+#top-area .header-logo {
   width: 220px;
   height: auto;
 }
 @media (max-width: 991.98px) {
-  #header-area .navbar-collapse {
+  #top-area .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.9725490196);
     text-align: center;
     margin-top: 2rem;
   }
 }
 @media (min-width: 992px) {
-  #header-area .navbar-nav .nav-item:hover {
+  #top-area .navbar-nav .nav-item:hover {
     border-bottom: 2px solid #777777;
   }
 }
-#header-area .navbar-nav .nav-item .nav-link {
+#top-area .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
-#header-area .navbar-nav .nav-item .nav-link:hover {
+#top-area .navbar-nav .nav-item .nav-link:hover {
   color: #777777;
 }
-#header-area .navbar-nav .nav-item .nav-link:active {
+#top-area .navbar-nav .nav-item .nav-link:active {
   color: #fff;
 }
 @media (min-width: 992px) {
-  #header-area .navbar-nav .nav-item .nav-link {
+  #top-area .navbar-nav .nav-item .nav-link {
     margin: 0 2rem;
     color: #000;
   }
-  #header-area .navbar-nav .nav-item .nav-link:hover {
+  #top-area .navbar-nav .nav-item .nav-link:hover {
     color: #777777;
   }
-  #header-area .navbar-nav .nav-item .nav-link:active {
+  #top-area .navbar-nav .nav-item .nav-link:active {
     color: #000;
   }
 }
