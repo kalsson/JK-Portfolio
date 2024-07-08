@@ -1,7 +1,7 @@
 // Imports
 @use '../custom' as *;
 
-#top-area {
+#header-area {
 
     #navbarSupportedContent {
         justify-content: flex-end;
@@ -14,7 +14,7 @@
 
     @include media-breakpoint-down(lg){
         .navbar-collapse {
-            background-color: #000000f8;
+            background-color: #1D1D1D;
             text-align: center;
             margin-top: 2rem;
         }

@@ -4,4 +4,7 @@
 @use 'base/reset';
 
 // IMPORT HEADER
-@use 'top-area/navbar';
+@use 'header-area/navbar';
+
+// IMPORT HERO
+@use 'hero-area/hero';

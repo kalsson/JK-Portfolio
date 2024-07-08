@@ -40,19 +40,19 @@
   <g id="Frame">
     <g id="Right-Bottom-Cornor">
       <rect x="845" y="350.1" width="20" height="250" transform="translate(379.9 1330.1) rotate(-90)" style="fill: #fff; stroke-width: 0px;"/>
-      <rect x="960" y="315.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
+      <rect x="960" y="317.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
     </g>
     <g id="Left-Bottom-Cornor">
       <rect x="115" y="350.1" width="20" height="250" transform="translate(-350.1 600.1) rotate(-90)" style="fill: #fff; stroke-width: 0px;"/>
-      <rect x="0" y="315.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
+      <rect x="0" y="317.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
     </g>
     <g id="Right-Top-Cornor">
       <rect x="845" y="-109.9" width="20" height="250" transform="translate(839.9 870.1) rotate(-90)" style="fill: #fff; stroke-width: 0px;"/>
-      <rect x="960" y="25.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
+      <rect x="960" y="23.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
     </g>
     <g id="Left-Top-Cornor">
       <rect x="115" y="-109.9" width="20" height="250" transform="translate(109.9 140.1) rotate(-90)" style="fill: #fff; stroke-width: 0px;"/>
-      <rect x="0" y="25.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
+      <rect x="0" y="23.1" width="20" height="150" style="fill: #fff; stroke-width: 0px;"/>
     </g>
   </g>
 </svg>
