@@ -12067,21 +12067,33 @@ body {
   font-weight: 300;
   color: #fff;
   line-height: 0.5;
+  text-align: center;
 }
 #hero-area h1 span {
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
 }
 #hero-area h2 {
   font-weight: 300;
   color: #fff;
   line-height: 1.4;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
   #hero-area {
-    height: 350px;
+    height: 400px;
     width: 100%;
+  }
+  #hero-area h1 {
+    text-align: left;
+  }
+  #hero-area h1 span {
+    text-align: left;
+  }
+  #hero-area h2 {
+    text-align: left;
   }
 }
 

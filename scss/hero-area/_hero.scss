@@ -10,10 +10,12 @@
     font-weight: 300;
     color: $white;
     line-height: 0.5;
+    text-align: center;
     
     span {
       font-weight: 600;
       text-transform: uppercase;
+      text-align: center;
     }
   }
   
@@ -21,12 +23,25 @@
     font-weight: 300;
     color: $white;
     line-height: 1.4;
+    text-align: center;
   }
 }
 
 @include media-breakpoint-up(lg) {
   #hero-area {
-    height: 350px;
+    height: 400px;
     width: 100%;
+
+    h1 {
+      text-align: left;
+
+      span {
+        text-align: left;
+      }
+    }
+
+    h2 {
+      text-align: left;
+    }
   }
 }
