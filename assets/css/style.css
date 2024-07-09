@@ -12031,11 +12031,6 @@ body {
     margin-top: 2rem;
   }
 }
-@media (min-width: 992px) {
-  #header-area .navbar-nav .nav-item:hover {
-    border-bottom: 2px solid #777777;
-  }
-}
 #header-area .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
@@ -12095,6 +12090,44 @@ body {
   #hero-area h2 {
     text-align: left;
   }
+}
+.cta-default {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-radius: 0;
+  padding: 10px 25px;
+  transition: all 0.5s ease-in-out;
+}
+.cta-default:hover {
+  color: #1D1D1D;
+  font-weight: 500;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.cta-secondary {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  padding: 10px 25px;
+  transition: all 0.5s ease-in-out;
+}
+.cta-secondary:hover {
+  color: #1D1D1D;
+  font-weight: 500;
+  background-color: #fff;
+  border: 2px solid #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

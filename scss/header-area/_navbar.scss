@@ -21,15 +21,7 @@
     }
 
     .navbar-nav {
-
         .nav-item {
-
-            @include media-breakpoint-up(lg) {
-                &:hover {
-                    border-bottom: 2px solid #777777;
-                }
-            }
-
             .nav-link {
                 color: #fff;
 
