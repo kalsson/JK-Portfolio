@@ -12094,7 +12094,7 @@ body {
 #intro {
   padding: 100px 0;
 }
-#intro h2 {
+#intro .section-title {
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
