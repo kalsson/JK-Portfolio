@@ -12054,7 +12054,7 @@ body {
 }
 
 #hero-area {
-  height: 350px;
+  height: 400px;
   width: 100%;
   background-color: #1D1D1D;
 }
@@ -12078,7 +12078,7 @@ body {
 
 @media (min-width: 992px) {
   #hero-area {
-    height: 400px;
+    height: 600px;
     width: 100%;
   }
   #hero-area h1 {
@@ -12091,16 +12091,25 @@ body {
     text-align: left;
   }
 }
+#intro {
+  padding: 100px 0;
+}
+#intro h2 {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  border: 10px solid #000;
+  padding: 20px 50px;
+}
+
 .cta-default {
   font-size: 1.4rem;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-left: 2px solid #fff;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  border-right: 2px solid #fff;
+  border: 2px solid #fff;
   border-radius: 0;
   padding: 10px 25px;
   transition: all 0.5s ease-in-out;
@@ -12113,9 +12122,10 @@ body {
 }
 
 .cta-secondary {
+  background-color: #fff;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #fff;
+  color: #1D1D1D;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 2px solid #fff;
@@ -12124,7 +12134,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .cta-secondary:hover {
-  color: #1D1D1D;
+  color: #777777;
   font-weight: 500;
   background-color: #fff;
   border: 2px solid #fff;

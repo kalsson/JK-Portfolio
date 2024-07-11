@@ -3,11 +3,12 @@
 // IMPORT BASE
 @use 'base/reset';
 
-// IMPORT HEADER
-@use 'header-area/navbar';
+// IMPORT SECTIONS
+@use 'sections/navbar';
+@use 'sections/hero';
 
-// IMPORT HERO
-@use 'hero-area/hero';
+// IMPORT ABOUT ME
+@use 'about-me-area/intro';
 
 // IMPORT COMPONENTS
 @use 'components/buttons';

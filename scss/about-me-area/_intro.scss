@@ -1,0 +1,16 @@
+// Imports
+@use '../custom' as *;
+
+#intro {
+  
+  padding: 100px 0;
+  
+  h2 {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    border: 10px solid $black;
+    padding: 20px 50px;
+  }
+}
