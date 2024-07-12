@@ -1,15 +1,35 @@
 // Imports
 @use '../custom' as *;
 
-#intro {  
+.about-me {
   padding: 100px 0;
-  
-  .section-title {
+
+  &__title {
     display: inline-block;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 15px;
     border: 10px solid $black;
     padding: 20px 50px;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    height: auto;
+  }
+
+  &__heading {
+    font-weight: 700;
+    letter-spacing: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    //font-size: 1rem; // Adjust as needed
+    //line-height: 1.5;
   }
 }

@@ -12091,18 +12091,30 @@ body {
     text-align: left;
   }
 }
-#intro {
+.about-me {
   padding: 100px 0;
 }
-#intro .section-title {
+.about-me__title {
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 15px;
   border: 10px solid #000;
   padding: 20px 50px;
+  margin-bottom: 50px;
 }
-
+.about-me__logo {
+  width: 100%;
+  min-width: 300px;
+  max-width: 450px;
+  height: auto;
+}
+.about-me__heading {
+  font-weight: 700;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .cta-default {
   font-size: 1.4rem;
   font-weight: 500;
