@@ -2,10 +2,10 @@
 @use '../custom' as *;
 
 .skills {
+  padding-bottom: 100px;
   
   &__header{
-    font-size: $h4-font-size;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 8px;
@@ -15,4 +15,22 @@
   //  color: $white;
   //  font-weight: 300;
   //}
+  
+  &__logo-wrapper {
+    display: inline-block;
+    border: 3px solid $black;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 0 5px 10px 5px;
+    opacity: 0.2;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  &__icons {
+    width: 35px;
+  }
 }

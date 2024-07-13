@@ -12131,7 +12131,7 @@ body {
   }
 }
 .about-me {
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
 }
 .about-me__title {
   display: inline-block;
@@ -12162,12 +12162,29 @@ body {
   }
 }
 
+.skills {
+  padding-bottom: 100px;
+}
 .skills__header {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 8px;
+}
+.skills__logo-wrapper {
+  display: inline-block;
+  border: 3px solid #000;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 0 5px 10px 5px;
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+}
+.skills__logo-wrapper:hover {
+  opacity: 1;
+}
+.skills__icons {
+  width: 35px;
 }
 
 .divider-vertically {
