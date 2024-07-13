@@ -12134,12 +12134,19 @@ body {
   }
 }
 
-#skills-section .skill-logos {
+.skills__header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.skills__logos {
   width: 65px;
   height: auto;
   opacity: 0.2;
 }
-#skills-section .skill-logos:hover {
+.skills__logos:hover {
   opacity: 1;
 }
 

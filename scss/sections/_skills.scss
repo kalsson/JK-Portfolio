@@ -1,8 +1,23 @@
 // Imports
 @use '../custom' as *;
 
-#skills-section {
-  .skill-logos {
+.skills {
+  
+  &__header{
+    font-size: $h4-font-size;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  
+  //&__text {
+  //  
+  //}
+  
+  
+  
+  &__logos {
     width: 65px;
     height: auto;
     opacity: 0.2;
