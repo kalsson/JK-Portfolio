@@ -6,9 +6,8 @@
 // IMPORT SECTIONS
 @use 'sections/navbar';
 @use 'sections/hero';
-
-// IMPORT ABOUT ME
-@use 'about-me-area/intro';
+@use 'sections/about';
+@use "sections/skills";
 
 // IMPORT COMPONENTS
 @use 'components/buttons';

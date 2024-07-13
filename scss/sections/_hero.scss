@@ -1,24 +1,25 @@
 // Imports
 @use '../custom' as *;
 
-#hero-area {
+#hero-section {
   height: 400px;
   width: 100%;
   background-color: #1D1D1D;
   
+
   h1 {
     font-weight: 300;
     color: $white;
     line-height: 0.5;
     text-align: center;
-    
+
     span {
       font-weight: 600;
       text-transform: uppercase;
       text-align: center;
     }
   }
-  
+
   h2 {
     font-weight: 300;
     color: $white;
@@ -28,8 +29,8 @@
 }
 
 @include media-breakpoint-up(lg) {
-  #hero-area {
-    height: 600px;
+  #hero-section {
+    height: 500px;
     width: 100%;
 
     h1 {

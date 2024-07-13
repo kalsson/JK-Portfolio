@@ -9,8 +9,8 @@
 </head>
 <body>
 <main>
-    <!-- HEADER AREA -->
-    <section id="header-area">
+    <!-- HEADER SECTION -->
+    <section id="header-section">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg py-3 py-lg-5">
             <div class="container-fluid px-lg-5">
@@ -25,10 +25,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#header-area">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#header-section">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#about-me-area">About Me</a>
+                            <a class="nav-link" aria-current="page" href="#about-me-section">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">My Work</a>
@@ -43,7 +43,7 @@
     </section>
 
     <!-- HERO SECTION -->
-    <section id="hero-area">
+    <section id="hero-section">
         <div class="container-fluid h-100 d-flex align-items-center">
             <div class="row w-100 d-flex justify-content-center">
                 <div class="col-12 col-lg-11 col-xl-8 col-xxl-6">
@@ -60,10 +60,12 @@
                         </h2>
                     </div>
                     <div class="d-flex flex-row justify-content-center justify-content-lg-start gap-5">
-                        <button type="button" class="btn cta-default">
-                            Want to know more?
-                        </button>
-                        
+                        <a href="#about-me-section">
+                            <button type="button" class="btn cta-default">
+                                Want to know more?
+                            </button>
+                        </a>
+
                         <button type="button" class="btn cta-secondary">
                             Get in Touch.
                         </button>
@@ -74,22 +76,17 @@
     </section>
 
     <!-- ABOUT ME SECTION -->
-    <section id="about-me">
+    <section id="about-me-section">
         <div class="about-me">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 mb-5 d-flex flex-column align-items-center">
                         <h2 class="about-me__title">About me</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6 d-flex justify-content-center bg-dark p-5">
-                        <img src="./images/section_logo.svg" class="about-me__logo" alt="JK Logotype" />
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <h3 class="display-1 about-me__heading">Who Am I?</h3>
-                        
-                        <p class="about-me__text text-center">
+                    <div class="col-12">
+                        <p class="about-me__text">
                             Hi, I'm Jonas, a passionate front-end developer with a strong focus on creating innovative
                             software solutions. My journey into web development began at 15, when I taught myself HTML
                             and CSS. Now in my 30's, I work daily with Blazor to develop cutting-edge
@@ -110,6 +107,25 @@
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
+    <section id="skills-section">
+        <div class="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <h5 class="card-title">Web Development</h5>
+                            <div class="card-body">
+                                <img src="./images/icons/html5-original-wordmark.svg" class="skill-logos" alt="HTML5 logo" />
+                                <img src="./images/icons/css3-original-wordmark.svg" class="skill-logos" alt="CSS3 logo" />
+                                <img src="./images/icons/sass-original.svg" class="skill-logos" alt="SASS logo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- <footer>
     

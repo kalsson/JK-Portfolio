@@ -1,0 +1,14 @@
+// Imports
+@use '../custom' as *;
+
+#skills-section {
+  .skill-logos {
+    width: 65px;
+    height: auto;
+    opacity: 0.2;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

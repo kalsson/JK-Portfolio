@@ -12010,6 +12010,7 @@ textarea.form-control-lg {
   }
 }
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -12017,59 +12018,59 @@ body {
   background-color: #f6f6f6;
 }
 
-#header-area #navbarSupportedContent {
+#header-section #navbarSupportedContent {
   justify-content: flex-end;
 }
-#header-area .header-logo {
+#header-section .header-logo {
   width: 220px;
   height: auto;
 }
 @media (max-width: 991.98px) {
-  #header-area .navbar-collapse {
+  #header-section .navbar-collapse {
     background-color: #1D1D1D;
     text-align: center;
     margin-top: 2rem;
   }
 }
-#header-area .navbar-nav .nav-item .nav-link {
+#header-section .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
-#header-area .navbar-nav .nav-item .nav-link:hover {
+#header-section .navbar-nav .nav-item .nav-link:hover {
   color: #777777;
 }
-#header-area .navbar-nav .nav-item .nav-link:active {
+#header-section .navbar-nav .nav-item .nav-link:active {
   color: #fff;
 }
 @media (min-width: 992px) {
-  #header-area .navbar-nav .nav-item .nav-link {
+  #header-section .navbar-nav .nav-item .nav-link {
     margin: 0 2rem;
     color: #000;
   }
-  #header-area .navbar-nav .nav-item .nav-link:hover {
+  #header-section .navbar-nav .nav-item .nav-link:hover {
     color: #777777;
   }
-  #header-area .navbar-nav .nav-item .nav-link:active {
+  #header-section .navbar-nav .nav-item .nav-link:active {
     color: #000;
   }
 }
 
-#hero-area {
+#hero-section {
   height: 400px;
   width: 100%;
   background-color: #1D1D1D;
 }
-#hero-area h1 {
+#hero-section h1 {
   font-weight: 300;
   color: #fff;
   line-height: 0.5;
   text-align: center;
 }
-#hero-area h1 span {
+#hero-section h1 span {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
-#hero-area h2 {
+#hero-section h2 {
   font-weight: 300;
   color: #fff;
   line-height: 1.4;
@@ -12077,22 +12078,32 @@ body {
 }
 
 @media (min-width: 992px) {
-  #hero-area {
-    height: 600px;
+  #hero-section {
+    height: 500px;
     width: 100%;
   }
-  #hero-area h1 {
+  #hero-section h1 {
     text-align: left;
   }
-  #hero-area h1 span {
+  #hero-section h1 span {
     text-align: left;
   }
-  #hero-area h2 {
+  #hero-section h2 {
     text-align: left;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .about-me {
   padding: 100px 0;
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
 }
 .about-me__title {
   display: inline-block;
@@ -12101,13 +12112,7 @@ body {
   letter-spacing: 15px;
   border: 10px solid #000;
   padding: 20px 50px;
-  margin-bottom: 50px;
-}
-.about-me__logo {
-  width: 100%;
-  min-width: 300px;
-  max-width: 450px;
-  height: auto;
+  margin-bottom: 25px;
 }
 .about-me__heading {
   font-weight: 700;
@@ -12115,6 +12120,29 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.about-me__text {
+  flex: 1;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  .about-me__text {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+#skills-section .skill-logos {
+  width: 65px;
+  height: auto;
+  opacity: 0.2;
+}
+#skills-section .skill-logos:hover {
+  opacity: 1;
+}
+
 .cta-default {
   font-size: 1.4rem;
   font-weight: 500;

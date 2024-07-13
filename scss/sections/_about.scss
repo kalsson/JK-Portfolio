@@ -1,0 +1,50 @@
+// Imports
+@use '../custom' as *;
+
+// Define the keyframes for the fade-in animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-me {
+  padding: 100px 0;
+  opacity: 0; // Initial state for the fade-in effect
+  animation: fadeIn 5s ease-in-out forwards; // Apply the fade-in animation
+
+  &__title {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    border: 10px solid $black;
+    padding: 20px 50px;
+    margin-bottom: 25px;
+  }
+
+  &__heading {
+    font-weight: 700;
+    letter-spacing: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    flex: 1;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+  }
+
+  @include media-breakpoint-up(lg){
+    &__text {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+  }
+}
