@@ -1,0 +1,46 @@
+// Imports
+@use '../custom' as *;
+
+// DIVIDER VERTICALLY
+.divider-vertically {
+  
+  margin: 20px 0;
+  &__up,
+  &__down {
+    width: 30px;
+    border: none;
+    border-top: 2px solid $black;
+    opacity: 1;
+  }
+
+  &__middle {
+    width: 60px;
+    border: none;
+    border-top: 2px solid $black;
+    opacity: 1;
+  }
+  
+}
+
+// DIVIDER HORIZONTALLY
+.divider-horizontally {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  
+  &__left,
+  &__right {
+    width: 50px;
+    border: none;
+    border-top: 3px solid $black;
+    opacity: 1;
+  }
+  
+  &__logo {
+    width: 50px;
+    margin: 0 20px;
+  }
+}

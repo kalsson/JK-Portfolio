@@ -3,11 +3,14 @@
 // IMPORT BASE
 @use 'base/reset';
 
+// IMPORT COMPONENTS
+@use 'components/buttons';
+
 // IMPORT SECTIONS
 @use 'sections/navbar';
 @use 'sections/hero';
 @use 'sections/about';
 @use "sections/skills";
 
-// IMPORT COMPONENTS
-@use 'components/buttons';
+// IMPORT UTILITIES
+@use "utilities/dividers";
