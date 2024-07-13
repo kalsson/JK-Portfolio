@@ -12169,14 +12169,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
-.skills__logos {
-  width: 80px;
-  height: auto;
-  opacity: 0.2;
-}
-.skills__logos:hover {
-  opacity: 1;
-}
 
 .divider-vertically {
   margin: 20px 0;
