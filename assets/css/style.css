@@ -12187,6 +12187,21 @@ body {
   width: 35px;
 }
 
+.my-work {
+  background-color: #1D1D1D;
+  padding: 100px 0 50px 0;
+}
+.my-work__title {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  border: 10px solid #fff;
+  padding: 20px 50px;
+  margin-bottom: 25px;
+}
+
 .divider-vertically {
   margin: 20px 0;
 }
