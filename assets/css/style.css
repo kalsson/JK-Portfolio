@@ -12189,7 +12189,7 @@ body {
 
 .my-work {
   background-color: #1D1D1D;
-  padding: 100px 0 50px 0;
+  padding: 100px 0;
 }
 .my-work__title {
   display: inline-block;
@@ -12200,6 +12200,34 @@ body {
   border: 10px solid #fff;
   padding: 20px 50px;
   margin-bottom: 25px;
+}
+
+.portfolio .col-12 {
+  padding: 125px 50px;
+}
+.portfolio__logo {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 550px;
+}
+.portfolio__image {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 350px;
+}
+.portfolio__header {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.portfolio__text {
+  text-align: center;
+}
+.portfolio .fa-github {
+  font-size: 4rem;
 }
 
 .divider-vertically {

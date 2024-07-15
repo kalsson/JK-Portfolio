@@ -3,7 +3,7 @@
 
 .my-work {
   background-color: $dark;
-  padding: 100px 0 50px 0;
+  padding: 100px 0;
   
   &__title {
     display: inline-block;
@@ -14,5 +14,41 @@
     border: 10px solid $white;
     padding: 20px 50px;
     margin-bottom: 25px;
+  }
+}
+
+.portfolio {
+  
+  .col-12 {
+    padding: 125px 50px;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    max-height: 550px;
+  }
+  
+  &__image {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 350px;
+  }
+
+  &__header {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+  
+  &__text {
+    text-align: center;
+  }
+  
+  .fa-github {
+    font-size: 4rem;
   }
 }
