@@ -3,60 +3,60 @@
 
 #header-section {
 
-    #navbarSupportedContent {
-        justify-content: flex-end;
-    }
+  #navbarSupportedContent {
+    justify-content: flex-end;
+  }
 
-    .header-logo {
-        width: 220px;
-        height: auto;
-    }
+  .header-logo {
+    width: 220px;
+    height: auto;
+  }
 
-    @include media-breakpoint-down(lg){
-        .navbar-collapse {
-            background-color: #1D1D1D;
-            text-align: center;
-            margin-top: 2rem;
+  @include media-breakpoint-down(lg) {
+    .navbar-collapse {
+      background-color: #1D1D1D;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #fff;
+
+        &:hover {
+          color: #777777;
         }
-    }
 
-    .navbar-nav {
-        .nav-item {
-            .nav-link {
-                color: #fff;
-
-                &:hover {
-                    color: #777777;
-                }
-
-                &:active {
-                    color: #fff;
-                }
-            }
-
-            @include media-breakpoint-up(lg) {
-
-                .nav-link {
-                    margin: 0 2rem;
-                    color: #000;
-
-                    &:hover {
-                        color: #777777;
-                    }
-
-                    &:active {
-                        color: #000;
-                    }
-                }
-            }
+        &:active {
+          color: #fff;
         }
+      }
+
+      @include media-breakpoint-up(lg) {
+        .nav-link {
+          margin: 0 2rem;
+          color: #000;
+
+          &:hover {
+            color: #777777;
+          }
+
+          &:active {
+            color: #000;
+          }
+        }
+      }
     }
+  }
 }
 
-// Add sticky styles
+// Add sticky styles with high specificity
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #f6f6f6;    
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  z-index: 9999 !important;
 }

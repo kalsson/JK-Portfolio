@@ -8,15 +8,19 @@ let header = document.getElementById("myHeader");
 
 // Get the offset position of the navbar
 let sticky = header.offsetTop;
+console.log('Sticky offset:', sticky); // Log the sticky offset
 
 /**
  * Adds the sticky class to the header when you reach its scroll position.
  * Removes the sticky class when you leave the scroll position.
  */
 function handleScroll() {
+    console.log('Scroll position:', window.pageYOffset); // Log the scroll position
     if (window.pageYOffset > sticky) {
+        console.log('Adding sticky class'); // Log when adding the class
         header.classList.add("sticky");
     } else {
+        console.log('Removing sticky class'); // Log when removing the class
         header.classList.remove("sticky");
     }
 }
