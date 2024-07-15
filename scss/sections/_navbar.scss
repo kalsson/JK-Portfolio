@@ -49,7 +49,14 @@
                     }
                 }
             }
-
         }
     }
+}
+
+// Add sticky styles
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f6f6f6;    
 }

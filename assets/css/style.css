@@ -12092,6 +12092,13 @@ body {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
 #hero-section {
   height: 400px;
   width: 100%;
@@ -12228,6 +12235,7 @@ body {
 .portfolio .fa-github {
   font-size: 25rem;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .portfolio .fa-github:hover {
   color: #4C4C4C;
@@ -12238,6 +12246,7 @@ body {
   }
 }
 
+/* Contact section styles */
 .contact {
   background-color: #282828;
   padding: 50px 50px;

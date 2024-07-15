@@ -14,7 +14,7 @@
         <!-- HEADER SECTION -->
         <section id="header-section">
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg py-3 py-lg-5">
+            <nav class="navbar navbar-expand-lg py-3 py-lg-5" id="myHeader">
                 <div class="container-fluid px-lg-5">
                     <a href="index.html">
                         <img src="images/header_logo.svg" class="header-logo" alt="logo"/>
@@ -36,14 +36,15 @@
                                 <a class="nav-link" aria-current="page" href="#my-work-section">My Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#contact-section">Contact Me</a>
+                                <a class="nav-link" aria-current="page" href="#contact-section">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </section>
-    </header>    
+    </header>
+
 
     <!-- HERO SECTION -->
     <section id="hero-section">
@@ -69,9 +70,11 @@
                             </button>
                         </a>
 
-                        <button type="button" class="btn cta-secondary">
-                            Get in Touch.
-                        </button>
+                        <a href="#contact-section">
+                            <button type="button" class="btn cta-secondary">
+                                Get in Touch.
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -513,6 +516,8 @@
     </footer>
 </main>
 
+<!-- ----------------------- MY JAVASCRIPT ------------------------ -->
+<script src="./assets/js/sticky-navbar-smooth-scroll.js"></script>
 <!-- ----------------------- BOOTSTRAP 5 JAVASCRIPT ------------------------ -->
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>

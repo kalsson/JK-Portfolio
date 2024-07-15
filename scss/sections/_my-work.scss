@@ -50,6 +50,7 @@
   .fa-github {
     font-size: 25rem;
     color: $white;
+    transition: all 0.3s ease-in-out;
     
     &:hover {
       color: $secondary;
