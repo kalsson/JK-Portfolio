@@ -9,38 +9,41 @@
 </head>
 <body>
 <main>
-    <!-- HEADER SECTION -->
-    <section id="header-section">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg py-3 py-lg-5">
-            <div class="container-fluid px-lg-5">
-                <a href="index.html">
-                    <img src="images/header_logo.svg" class="header-logo" alt="logo"/>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#header-section">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#about-me-section">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">My Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Contact Me</a>
-                        </li>
-                    </ul>
+    <!-- HEADER AREA -->
+    <header>
+        <!-- HEADER SECTION -->
+        <section id="header-section">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg py-3 py-lg-5">
+                <div class="container-fluid px-lg-5">
+                    <a href="index.html">
+                        <img src="images/header_logo.svg" class="header-logo" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#header-section">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about-me-section">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#my-work-section">My Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#contact-section">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </section>
+            </nav>
+        </section>
+    </header>    
 
     <!-- HERO SECTION -->
     <section id="hero-section">
@@ -207,10 +210,10 @@
             <div class="container-fluid">
                 <!-- Portfolio Intro -->
                 <div class="row">
-                    <div class="col-12 col-xl-6 bg-dark d-flex justify-content-center">
+                    <div class="col-6 bg-dark d-flex justify-content-center">
                         <img src="./images/section_logo.svg" class="portfolio__logo" alt="JK logo" />
                     </div>
-                    <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
+                    <div class="col-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Portfolio</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -218,19 +221,24 @@
                             <hr class="divider-horizontally__right">
                         </div>
                         <p class="portfolio__text">
-                            These are the tools and technologies I use to turn ideas into reality,
-                            crafting efficient and innovative solutions for the digital world. Each tool in my
-                            collection has been carefully chosen for its versatility and power, enabling me to tackle a
-                            wide range of development challenges. Whether I'm designing intuitive user interfaces,
-                            implementing complex functionalities, or ensuring seamless performance, these technologies
-                            are my go-to resources for delivering exceptional results.
+                            Welcome to my portfolio, featuring a collection of practice projects from The C# Academy. 
+                            These projects showcase my skills and growth in software development, reflecting my 
+                            commitment to learning and mastering new technologies.
+                            
+                            These practice projects have provided me with valuable hands-on experience in various 
+                            aspects of software development, from writing efficient code to implementing complex 
+                            functionalities. Each project has contributed to my understanding and application of best 
+                            practices in the industry.
+
+                            Explore these projects to see how I apply my learning to solve practical problems and 
+                            deliver innovative solutions.
                         </p>
                     </div>
                 </div>
                 
                 <!-- Habit Tracker -->
                 <div class="row">
-                    <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
+                    <div class="col-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Habit Tracker</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -238,29 +246,271 @@
                             <hr class="divider-horizontally__right">
                         </div>
                         <p class="portfolio__text">
-                            Habit Tracker is a console application that enables you to keep track of your daily habits. 
-                            This application lets you perform basic CRUD operations. The application is designed to 
-                            track habits based on quantity (e.g., number of water glasses a day) rather than time 
-                            (e.g., hours of sleep). After running the application, you'll see a main menu with options 
-                            for CRUD operations on habits. Follow the prompts to perform the desired actions.
+                            Habit Tracker is a C# console application designed to help users keep track of their daily 
+                            habits efficiently. This project is perfect for those looking to perform basic CRUD 
+                            (Create, Read, Update, Delete) operations on their habits in a simple and intuitive way. The 
+                            application utilizes ADO.NET for database operations and stores data in an SQLite database.
                         </p>
-                        <div class="mt-5 d-flex flex-column align-items-center">
-                            <a href="https://github.com/kalsson/CodeReviews.Console.HabitTracker/tree/master/HabitTracker.kalsson" target="_blank">
-                                <i class="fa-brands fa-github" title="Github Repository - Habit Tracker"></i>
-                            </a>
-                        </div>
                     </div>
-                    <div class="col-12 col-xl-6 bg-dark d-flex justify-content-center">
-                        <img src="./images/HabitTracker.png" class="portfolio__image" alt="Habit tracker image" />
+                    <div class="col-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.HabitTracker/tree/master/HabitTracker.kalsson"
+                           title="Github Repository - Habit Tracker" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coding Tracker -->
+                <div class="row">
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.CodingTracker/tree/main/CodingTracker.kalsson"
+                           title="Github Repository - Coding Tracker" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Coding Tracker</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Coding Tracker is a C# console application designed to help users log and track their coding 
+                            sessions. This project is ideal for developers who want to monitor their coding habits and 
+                            progress over time, offering simple and effective CRUD (Create, Read, Update, Delete) 
+                            operations to manage their coding logs. The application employs Dapper for database access 
+                            and stores data in a SQLite database.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Flashcards -->
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Flashcards</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Flashcards is a C# console application designed to help users create and manage digital 
+                            flashcards for studying. This project is ideal for students and learners who want to enhance 
+                            their memorization skills, offering simple and effective CRUD (Create, Read, Update, Delete) 
+                            operations to handle their flashcards efficiently. The application leverages Dapper for ORM 
+                            and Spectre.Console for a rich console interface. It uses a SQL Server database to store the 
+                            flashcard data.
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.Flashcards/tree/main/Flashcards.kalsson"
+                           title="Github Repository - Flashcards" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="row">
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.Drinks/tree/main/DrinksInfo.kalsson"
+                           title="Github Repository - Drinks info" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Drinks info</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Drinks is a C# console application designed to help restaurant employees search for and 
+                            manage drink recipes from an external vendor's database via an API. This project is ideal 
+                            for drink enthusiasts who want easy access to recipes and the ability to manage their 
+                            collection of drinks. The application uses REST APIs to fetch data about drinks from 
+                            external sources and presents it in a user-friendly manner.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Phone Book -->
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Phone Book</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Phonebook is a C# console application designed to help users manage their contacts 
+                            efficiently. This project is ideal for individuals who want to keep track of their contacts 
+                            in a simple and organized manner. The application uses Entity Framework Core for database 
+                            operations with SQL Server and presents data in a user-friendly manner using 
+                            Spectre.Console.
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.Phonebook/tree/main/PhoneBook.kalsson"
+                           title="Github Repository - Phone Book" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Shifts Logger -->
+                <div class="row">
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.ShiftsLogger/tree/main/ShiftsLogger.kalsson"
+                           title="Github Repository - Shifts Logger" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Shifts Logger</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Shifts Logger is a C# console application designed to help businesses manage and log 
+                            employee shifts efficiently. This project is ideal for managers who need to keep track of 
+                            employee work schedules in a simple and organized manner. The application uses 
+                            Entity Framework Core for database operations with SQL Server and presents data 
+                            in a user-friendly manner.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Exercise Tracker -->
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Exercise Tracker</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Exercise Tracker is a C# console application designed to help users log and manage their 
+                            exercise routines efficiently. This project is ideal for fitness enthusiasts who want to 
+                            keep track of their workouts in a simple and organized manner. The application uses 
+                            Entity Framework Core for database operations with SQL Server and presents data in a 
+                            user-friendly manner using Spectre.Console.
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.ExerciseTracker/tree/main/ExerciseTracker.kalsson"
+                           title="Github Repository - Exercise Tracker" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sports Results Notifier -->
+                <div class="row">
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.SportsResults/tree/main/SportsResultsApp.kalsson"
+                           title="Github Repository - Sports Results Notifier" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Sports Results Notifier</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Sports Results Notifier is a C# console application designed to help users track and receive updates 
+                            on sports results. The application uses HTML parsing to fetch sports results from a specific 
+                            website and sends updates via email.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Excel Reader -->
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Excel Reader</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Excel Reader is a C# console application designed to help users read and manage data from 
+                            Excel files efficiently. This project is ideal for individuals who frequently work with 
+                            Excel files and need a streamlined way to process and analyze data. The application uses 
+                            EPPlus to handle Excel file operations and Entity Framework Core for database operations 
+                            with SQLite.
+                        </p>
+                    </div>
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.ExcelReader/tree/main/ExcelReader.kalsson"
+                           title="Github Repository - Excel Reader" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Unit Testing -->
+                <div class="row">
+                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.CodingTracker/tree/main/CodingTracker.kalsson"
+                           title="Github Repository - Coding Tracker" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h3 class="portfolio__header">Unit Testing</h3>
+                        <div class="divider-horizontally">
+                            <hr class="divider-horizontally__left">
+                            <img src="./images/diamond_logo.svg" class="divider-horizontally__logo" alt="Divider"/>
+                            <hr class="divider-horizontally__right">
+                        </div>
+                        <p class="portfolio__text">
+                            Unit Testing is a crucial aspect of software development that ensures code reliability and 
+                            functionality. This C# console application project is designed to help developers understand 
+                            and implement unit tests effectively. The unit tests for this project are included in the 
+                            Coding Tracker project, providing a practical example of how to test application 
+                            functionality.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <footer>
-    
-    </footer> -->
+    <!-- FOOTER AREA -->
+    <footer>
+        <section id="contact-section">
+            <div class="contact">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3 d-flex justify-content-center">
+                                <img src="./images/footer_logo.svg" class="contact__logo" alt="JK Logo" />
+                            </div>
+                            <div class="mb-5">
+                                <h6 class="contact__title">Contact me</h6>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a href="mailto:jonne_k@live.se">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </main>
 
 <!-- ----------------------- BOOTSTRAP 5 JAVASCRIPT ------------------------ -->
