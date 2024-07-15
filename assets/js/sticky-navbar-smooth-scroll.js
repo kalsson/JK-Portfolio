@@ -1,31 +1,27 @@
-// When the user scrolls the page, execute handleScroll function
-window.onscroll = function() {
-    handleScroll();
-};
-
-// Get the header element
-let header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-let sticky = header.offsetTop;
-console.log('Sticky offset:', sticky); // Log the sticky offset
-
-/**
- * Adds the sticky class to the header when you reach its scroll position.
- * Removes the sticky class when you leave the scroll position.
- */
-function handleScroll() {
-    console.log('Scroll position:', window.pageYOffset); // Log the scroll position
-    if (window.pageYOffset > sticky) {
-        console.log('Adding sticky class'); // Log when adding the class
-        header.classList.add("sticky");
-    } else {
-        console.log('Removing sticky class'); // Log when removing the class
-        header.classList.remove("sticky");
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function() {
+    // When the user scrolls the page, execute handleScroll function
+    window.onscroll = function() {
+        handleScroll();
+    };
+
+    // Get the header element
+    let header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+    let sticky = header.offsetTop;
+
+    /**
+     * Adds the sticky class to the header when you reach its scroll position.
+     * Removes the sticky class when you leave the scroll position.
+     */
+    function handleScroll() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
     /**
      * Smooth scroll to the target element with controlled speed.
      *
@@ -35,9 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function smoothScroll(target, duration) {
         var targetElement = document.querySelector(target);
         if (!targetElement) return;
-        var targetPosition = targetElement.getBoundingClientRect().top - header.offsetHeight; // Adjust for header height
+        var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight;
         var startPosition = window.pageYOffset;
+        var distance = targetPosition - startPosition;
         var startTime = null;
+
+        console.log('Target:', target); // Log the target element
+        console.log('Target Position:', targetPosition); // Log the target position
+        console.log('Start Position:', startPosition); // Log the start position
+        console.log('Distance:', distance); // Log the distance
 
         /**
          * Animates the scroll.
@@ -47,9 +49,19 @@ document.addEventListener('DOMContentLoaded', function() {
         function animation(currentTime) {
             if (startTime === null) startTime = currentTime;
             var timeElapsed = currentTime - startTime;
-            var run = ease(timeElapsed, startPosition, targetPosition, duration);
+            var run = ease(timeElapsed, startPosition, distance, duration);
             window.scrollTo(0, run);
-            if (timeElapsed < duration) requestAnimationFrame(animation);
+
+            console.log('Current Time:', currentTime); // Log the current time
+            console.log('Time Elapsed:', timeElapsed); // Log the time elapsed
+            console.log('Run:', run); // Log the run position
+
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            } else {
+                window.scrollTo(0, startPosition + distance); // Ensure we end at the exact position
+                console.log('Scroll Completed to:', startPosition + distance);
+            }
         }
 
         /**
@@ -62,13 +74,15 @@ document.addEventListener('DOMContentLoaded', function() {
          * @returns {number} The new position.
          */
         function ease(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
+            t /= d;
             t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
+            return c * (t * t * t + 1) + b;
         }
 
-        requestAnimationFrame(animation);
+        // Add a slight delay before initiating the animation to ensure smoothness
+        setTimeout(function() {
+            requestAnimationFrame(animation);
+        }, 50); // 50ms delay
     }
 
     // Add event listeners to all anchor links and buttons
@@ -77,7 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             var target = this.getAttribute('href');
-            smoothScroll(target, 2000); // 2000ms = 2 seconds for slower scrolling
+            var duration = navigator.userAgent.includes("Firefox") ? 2000 : 500; // Adjust duration based on browser
+            smoothScroll(target, duration); // Dynamic duration for better cross-browser experience
         });
     });
 });
