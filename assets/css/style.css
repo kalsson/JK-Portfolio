@@ -12142,20 +12142,13 @@ body {
   padding: 100px 0 50px 0;
 }
 .about-me__title {
-  font-size: 2rem;
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
   border: 10px solid #000;
   padding: 20px 50px;
   margin-bottom: 25px;
-}
-@media (min-width: 768px) {
-  .about-me__title {
-    font-size: 3.2rem;
-    letter-spacing: 15px;
-  }
 }
 .about-me__heading {
   font-weight: 700;
@@ -12170,10 +12163,10 @@ body {
   padding-right: 10px;
   z-index: 1;
 }
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
   .about-me__text {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 
@@ -12226,7 +12219,7 @@ body {
 
 .portfolio .row {
   border: 5px solid #1D1D1D;
-  margin-bottom: 25px;
+  margin: 0 5px 25px 5px;
 }
 .portfolio .row .col-12 {
   padding: 75px 25px;
@@ -12241,10 +12234,7 @@ body {
   }
 }
 .portfolio__logo {
-  width: 100%;
-  max-width: 550px;
-  height: 100%;
-  max-height: 550px;
+  width: 50%;
 }
 .portfolio__header {
   font-weight: 700;
@@ -12254,6 +12244,14 @@ body {
 }
 .portfolio__text {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 1400px) {
+  .portfolio__text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 .portfolio .fa-github {
   font-size: 10rem;
