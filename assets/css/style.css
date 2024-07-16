@@ -12056,6 +12056,22 @@ body {
   border: 2px solid #fff;
 }
 
+#header-section .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 3rem;
+  border: none;
+}
+#header-section .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+#header-section .navbar-toggler .fa-bars {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+#header-section .navbar-toggler .fa-bars:hover {
+  color: #777777;
+}
 #header-section #navbarSupportedContent {
   justify-content: flex-end;
 }
@@ -12083,9 +12099,6 @@ body {
   #header-section .navbar-nav .nav-item .nav-link {
     margin: 0 2rem;
     color: #000;
-  }
-  #header-section .navbar-nav .nav-item .nav-link:hover {
-    color: #777777;
   }
   #header-section .navbar-nav .nav-item .nav-link:active {
     color: #000;
