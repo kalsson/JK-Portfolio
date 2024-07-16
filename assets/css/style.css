@@ -12142,13 +12142,20 @@ body {
   padding: 100px 0 50px 0;
 }
 .about-me__title {
+  font-size: 2rem;
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   border: 10px solid #000;
   padding: 20px 50px;
   margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .about-me__title {
+    font-size: 3.2rem;
+    letter-spacing: 15px;
+  }
 }
 .about-me__heading {
   font-weight: 700;
@@ -12165,8 +12172,8 @@ body {
 }
 @media (min-width: 992px) {
   .about-me__text {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -12200,14 +12207,21 @@ body {
   padding: 100px 0;
 }
 .my-work__title {
+  font-size: 2rem;
   display: inline-block;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   border: 10px solid #fff;
   padding: 20px 50px;
   margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .my-work__title {
+    font-size: 3.2rem;
+    letter-spacing: 15px;
+  }
 }
 
 .portfolio .row {

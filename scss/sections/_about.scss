@@ -5,13 +5,21 @@
   padding: 100px 0 50px 0;
 
   &__title {
+    font-size: $h5-font-size;
     display: inline-block;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     border: 10px solid $black;
     padding: 20px 50px;
     margin-bottom: 25px;
+  }
+  
+  @include media-breakpoint-up(md) {
+    &__title {
+      font-size: $h2-font-size;
+      letter-spacing: 15px;
+    }
   }
 
   &__heading {
@@ -29,10 +37,10 @@
     z-index: 1;
   }
 
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg){    
     &__text {
-      padding-left: 200px;
-      padding-right: 200px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
   }
 }
