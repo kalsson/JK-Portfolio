@@ -12234,17 +12234,12 @@ body {
   text-align: center;
 }
 .portfolio .fa-github {
-  font-size: 25rem;
+  font-size: 10rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
 .portfolio .fa-github:hover {
   color: #4C4C4C;
-}
-@media (max-width: 575.98px) {
-  .portfolio .fa-github {
-    font-size: 12rem;
-  }
 }
 
 /* Contact section styles */
