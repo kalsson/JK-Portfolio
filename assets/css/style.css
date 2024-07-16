@@ -12179,6 +12179,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
+@media (min-width: 992px) {
+  .skills__text {
+    padding-right: 30px;
+  }
+}
 .skills__logo-wrapper {
   display: inline-block;
   border: 3px solid #000;
