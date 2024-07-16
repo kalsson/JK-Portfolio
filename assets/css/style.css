@@ -12230,6 +12230,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
+@media (max-width: 991.98px) {
+  .portfolio__header {
+    font-size: 2rem;
+  }
+}
 .portfolio__text {
   text-align: center;
 }

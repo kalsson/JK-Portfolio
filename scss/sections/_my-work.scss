@@ -43,6 +43,12 @@
     letter-spacing: 8px;
   }
   
+  @include media-breakpoint-down(lg){
+    &__header {
+      font-size: $h5-font-size;
+    }
+  }
+  
   &__text {
     text-align: center;
   }
