@@ -19,13 +19,23 @@
 
 .portfolio {
   
-  .col-6 {
-    padding: 125px 50px;
+  .row {
+    border: 5px solid $dark;
+    margin-bottom: 25px;
+    
+    .col-12 {
+      padding: 75px 25px;
+    } 
   }
   
-  @include media-breakpoint-down(lg) {
-    .col-6 {
-      padding: 125px 25px;
+  @include media-breakpoint-up(lg) {
+    .row {
+      border: none;
+      margin-bottom: 0;
+
+      .col-12 {
+        padding: 125px 25px;
+      }
     }
   }
 
@@ -41,12 +51,6 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 8px;
-  }
-  
-  @include media-breakpoint-down(lg){
-    &__header {
-      font-size: $h5-font-size;
-    }
   }
   
   &__text {

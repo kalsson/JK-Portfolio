@@ -12210,11 +12210,19 @@ body {
   margin-bottom: 25px;
 }
 
-.portfolio .col-6 {
-  padding: 125px 50px;
+.portfolio .row {
+  border: 5px solid #1D1D1D;
+  margin-bottom: 25px;
 }
-@media (max-width: 991.98px) {
-  .portfolio .col-6 {
+.portfolio .row .col-12 {
+  padding: 75px 25px;
+}
+@media (min-width: 992px) {
+  .portfolio .row {
+    border: none;
+    margin-bottom: 0;
+  }
+  .portfolio .row .col-12 {
     padding: 125px 25px;
   }
 }
@@ -12229,11 +12237,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 8px;
-}
-@media (max-width: 991.98px) {
-  .portfolio__header {
-    font-size: 2rem;
-  }
 }
 .portfolio__text {
   text-align: center;
