@@ -11,6 +11,12 @@
     letter-spacing: 8px;
   }
   
+  @include media-breakpoint-up(lg) {
+    &__text {
+      padding-right: 30px;
+    }
+  }
+  
   &__logo-wrapper {
     display: inline-block;
     border: 3px solid $black;

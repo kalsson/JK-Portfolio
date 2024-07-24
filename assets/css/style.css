@@ -12056,6 +12056,22 @@ body {
   border: 2px solid #fff;
 }
 
+#header-section .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 3rem;
+  border: none;
+}
+#header-section .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+#header-section .navbar-toggler .fa-bars {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+#header-section .navbar-toggler .fa-bars:hover {
+  color: #777777;
+}
 #header-section #navbarSupportedContent {
   justify-content: flex-end;
 }
@@ -12083,9 +12099,6 @@ body {
   #header-section .navbar-nav .nav-item .nav-link {
     margin: 0 2rem;
     color: #000;
-  }
-  #header-section .navbar-nav .nav-item .nav-link:hover {
-    color: #777777;
   }
   #header-section .navbar-nav .nav-item .nav-link:active {
     color: #000;
@@ -12163,7 +12176,7 @@ body {
   padding-right: 10px;
   z-index: 1;
 }
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
   .about-me__text {
     padding-left: 200px;
     padding-right: 200px;
@@ -12178,6 +12191,11 @@ body {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 8px;
+}
+@media (min-width: 992px) {
+  .skills__text {
+    padding-right: 30px;
+  }
 }
 .skills__logo-wrapper {
   display: inline-block;
@@ -12200,29 +12218,41 @@ body {
   padding: 100px 0;
 }
 .my-work__title {
+  font-size: 2rem;
   display: inline-block;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   border: 10px solid #fff;
   padding: 20px 50px;
   margin-bottom: 25px;
 }
-
-.portfolio .col-6 {
-  padding: 125px 50px;
+@media (min-width: 768px) {
+  .my-work__title {
+    font-size: 3.2rem;
+    letter-spacing: 15px;
+  }
 }
-@media (max-width: 991.98px) {
-  .portfolio .col-6 {
+
+.portfolio .row {
+  border: 5px solid #1D1D1D;
+  margin-bottom: 25px;
+}
+.portfolio .row .col-12 {
+  padding: 75px 25px;
+}
+@media (min-width: 992px) {
+  .portfolio .row {
+    border: none;
+  }
+  .portfolio .row .col-12 {
     padding: 125px 25px;
   }
 }
 .portfolio__logo {
   width: 100%;
-  max-width: 550px;
-  height: 100%;
-  max-height: 550px;
+  max-width: 300px;
 }
 .portfolio__header {
   font-weight: 700;
@@ -12232,19 +12262,22 @@ body {
 }
 .portfolio__text {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 1400px) {
+  .portfolio__text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 .portfolio .fa-github {
-  font-size: 25rem;
+  font-size: 10rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
 .portfolio .fa-github:hover {
   color: #4C4C4C;
-}
-@media (max-width: 575.98px) {
-  .portfolio .fa-github {
-    font-size: 12rem;
-  }
 }
 
 /* Contact section styles */

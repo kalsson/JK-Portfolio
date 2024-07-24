@@ -16,13 +16,13 @@
             <!-- Navigation -->
             <nav class="navbar navbar-expand-lg py-3 py-lg-5" id="myHeader">
                 <div class="container-fluid px-lg-5">
-                    <a href="index.html">
+                    <a href="#header-section">
                         <img src="images/header_logo.svg" class="header-logo" alt="logo"/>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
@@ -45,7 +45,6 @@
         </section>
     </header>
 
-
     <!-- HERO SECTION -->
     <section id="hero-section">
         <div class="container-fluid h-100 d-flex align-items-center">
@@ -63,7 +62,7 @@
                             industrial marking equipment industry.
                         </h2>
                     </div>
-                    <div class="d-flex flex-row justify-content-center justify-content-lg-start gap-5">
+                    <div class="d-flex flex-column align-items-center gap-4 flex-lg-row justify-content-lg-start gap-lg-5">
                         <a href="#about-me-section">
                             <button type="button" class="btn cta-default">
                                 Want to know more?
@@ -96,9 +95,9 @@
                     <div class="col-12">
                         <p class="about-me__text">
                             Hi, I'm Jonas, a passionate front-end developer with a strong focus on creating innovative
-                            software solutions. My journey into web development began at 15, when I taught myself HTML
-                            and CSS. Now in my 30's, I work daily with Blazor to develop cutting-edge
-                            applications. <br><br>
+                            software solutions. My journey into web development began at age 15, when I taught myself 
+                            HTML and CSS. Now in my late 30's, I work daily with HTML, CSS, SCSS, Bootstrap, Tailwind, 
+                            C# and Blazor to develop cutting-edge applications. <br><br>
 
                             In my spare time, I enhance my skills in C# by building projects from The C# Academy, aiming
                             to become a full stack developer. This dedication allows me to bring innovative solutions
@@ -119,8 +118,8 @@
     <section id="skills-section">
         <div class="skills">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-7">
+                <div class="row gap-5 gap-lg-0">
+                    <div class="col-12 col-lg-8">
                         <h3 class="skills__header">Toolbox</h3>
 
                         <div class="divider-vertically">
@@ -138,7 +137,7 @@
                             are my go-to resources for delivering exceptional results.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-4 d-flex align-items-end mx-auto">
+                    <div class="col-12 col-lg-4 d-flex align-items-end">
                         <div>
                             <!-- Adobe Photoshop Icon -->
                             <div class="skills__logo-wrapper" title="Adobe Photoshop">
@@ -213,10 +212,10 @@
             <div class="container-fluid">
                 <!-- Portfolio Intro -->
                 <div class="row">
-                    <div class="col-6 bg-dark d-flex justify-content-center">
+                    <div class="col-12 col-lg-6 bg-dark d-flex justify-content-center">
                         <img src="./images/section_logo.svg" class="portfolio__logo" alt="JK logo" />
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Portfolio</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -241,7 +240,7 @@
                 
                 <!-- Habit Tracker -->
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Habit Tracker</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -255,8 +254,8 @@
                             application utilizes ADO.NET for database operations and stores data in an SQLite database.
                         </p>
                     </div>
-                    <div class="col-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Habit%20Tracker"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.HabitTracker/tree/master/HabitTracker.kalsson"
                            title="Github Repository - Habit Tracker" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -265,13 +264,13 @@
 
                 <!-- Coding Tracker -->
                 <div class="row">
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Coding%20Tracker"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.CodingTracker/tree/main/CodingTracker.kalsson"
                            title="Github Repository - Coding Tracker" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Coding Tracker</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -290,7 +289,7 @@
 
                 <!-- Flashcards -->
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Flashcards</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -306,8 +305,8 @@
                             flashcard data.
                         </p>
                     </div>
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Flashcards"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.Flashcards/tree/main/Flashcards.kalsson"
                            title="Github Repository - Flashcards" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -316,13 +315,13 @@
 
                 <!-- Drinks -->
                 <div class="row">
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Drinks%20Info"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.Drinks/tree/main/DrinksInfo.kalsson"
                            title="Github Repository - Drinks info" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Drinks info</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -341,7 +340,7 @@
 
                 <!-- Phone Book -->
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Phone Book</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -356,8 +355,8 @@
                             Spectre.Console.
                         </p>
                     </div>
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Phonebook"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.Phonebook/tree/main/PhoneBook.kalsson"
                            title="Github Repository - Phone Book" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -366,13 +365,13 @@
 
                 <!-- Shifts Logger -->
                 <div class="row">
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Shifts%20Logger"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.ShiftsLogger/tree/main/ShiftsLogger.kalsson"
                            title="Github Repository - Shifts Logger" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Shifts Logger</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -391,7 +390,7 @@
 
                 <!-- Exercise Tracker -->
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Exercise Tracker</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -406,8 +405,8 @@
                             user-friendly manner using Spectre.Console.
                         </p>
                     </div>
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Exercise%20Tracker"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.ExerciseTracker/tree/main/ExerciseTracker.kalsson"
                            title="Github Repository - Exercise Tracker" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -416,13 +415,13 @@
 
                 <!-- Sports Results Notifier -->
                 <div class="row">
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Sports%20Results"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.SportsResults/tree/main/SportsResultsApp.kalsson"
                            title="Github Repository - Sports Results Notifier" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Sports Results Notifier</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -439,7 +438,7 @@
 
                 <!-- Excel Reader -->
                 <div class="row">
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Excel Reader</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">
@@ -454,8 +453,8 @@
                             with SQLite.
                         </p>
                     </div>
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Excel%20Reader"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.ExcelReader/tree/main/ExcelReader.kalsson"
                            title="Github Repository - Excel Reader" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -464,13 +463,13 @@
 
                 <!-- Unit Testing -->
                 <div class="row">
-                    <div class="col-6 col-xl-6 bg-dark d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/kalsson/PortfolioProjects/tree/7ccf381d5e207ce61dbc32356b49982f1e910f93/Console/Coding%20Tracker"
+                    <div class="col-12 col-lg-6 bg-dark d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/kalsson/CodeReviews.Console.CodingTracker/tree/main/CodingTracker.kalsson"
                            title="Github Repository - Coding Tracker" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
-                    <div class="col-6 d-flex flex-column justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                         <h3 class="portfolio__header">Unit Testing</h3>
                         <div class="divider-horizontally">
                             <hr class="divider-horizontally__left">

@@ -6,34 +6,49 @@
   padding: 100px 0;
   
   &__title {
+    font-size: $h5-font-size;
     display: inline-block;
     color: $white;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     border: 10px solid $white;
     padding: 20px 50px;
     margin-bottom: 25px;
+  }
+  
+  @include media-breakpoint-up(md) {
+    &__title {
+      font-size: $h2-font-size;
+      letter-spacing: 15px;
+    }
   }
 }
 
 .portfolio {
   
-  .col-6 {
-    padding: 125px 50px;
+  .row {
+    border: 5px solid $dark;
+    margin-bottom: 25px;
+    
+    .col-12 {
+      padding: 75px 25px;
+    } 
   }
   
-  @include media-breakpoint-down(lg) {
-    .col-6 {
-      padding: 125px 25px;
+  @include media-breakpoint-up(lg) {    
+    .row {
+      border: none;
+
+      .col-12 {
+        padding: 125px 25px;
+      }
     }
   }
-
+  
   &__logo {
     width: 100%;
-    max-width: 550px;
-    height: 100%;
-    max-height: 550px;
+    max-width: 300px;
   }
 
   &__header {
@@ -45,21 +60,24 @@
   
   &__text {
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  @include media-breakpoint-up(xxl) {
+    &__text {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
   }
   
   .fa-github {
-    font-size: 25rem;
+    font-size: 10rem;
     color: $white;
     transition: all 0.3s ease-in-out;
     
     &:hover {
       color: $secondary;
-    }
-  }
-  
-  @include media-breakpoint-down(sm) {
-    .fa-github {
-      font-size: 12rem;
     }
   }
 }
