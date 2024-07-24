@@ -12245,6 +12245,7 @@ body {
 @media (min-width: 992px) {
   .portfolio .row {
     border: none;
+    margin-bottom: 0;
   }
   .portfolio .row .col-12 {
     padding: 125px 25px;
